@@ -42,7 +42,6 @@ def main():
 						extractEmail(webPageSecondLevel)
 					except urllib2.HTTPError, error:
 						contents = error.read()
-#are these on an endless loop?
 
 def parse(myList):                                                                
     ''' Function splits webpage into list and parses email addresses '''
