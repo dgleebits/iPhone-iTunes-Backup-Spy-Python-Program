@@ -20,7 +20,7 @@ for letter in alphabet:
     	if '_id=' in line:
 			dataList.append(line[line.find('''_id=''')+4:line.find('''" data-ajax="false"''')])
 for item in range(len(mylist)):
-	response = mechanize.urlopen('http://m.directory.ubc.ca/index.cfm/person/get?person_id=' + (mylist[item]))
+	response = mechanize.urlopen('http://m.directory.example.ca/index.cfm/person/get?person_id=' + (mylist[item]))
 	dump = response.readlines()
 	for line in dump:
 	if 'mailto:' in line:
